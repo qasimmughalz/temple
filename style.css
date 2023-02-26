@@ -12,7 +12,7 @@ body{
 }
 
 :root{
-    --blue:#ff8900;
+    --blue:#F4C430;
 }
 
 .text-success{
@@ -87,7 +87,7 @@ nav{
     width: 100%;
     display: block;
     content: '';
-    border: 5px solid #ff6d01;
+    border: 5px solid #F4C430;
 }
 
 
@@ -339,7 +339,7 @@ h1 {
 }
 
 .btn-primary{
-  background-color: #FF6D01;
+  background-color: #F4C430;
   border: 0px;
 }
 .btn-primary:hover{
@@ -427,11 +427,11 @@ canvas {
 
 
 .congregation{
-  background-color: #FF6D01;
+  background-color: #F4C430;
 opacity: 0.8;
-background-image: radial-gradient(circle at center center, #ffd3b2, #FF6D01), repeating-radial-gradient(circle at center center, #ffd3b2, #ffd3b2, 10px, transparent 20px, transparent 10px);
+background-image: radial-gradient(circle at center center, #ffd3b2, #F4C430), repeating-radial-gradient(circle at center center, #ffd3b2, #ffd3b2, 10px, transparent 20px, transparent 10px);
 background-blend-mode: multiply;
-    background-color: #ff6d01;
+    background-color: #F4C430;
     padding: 150px 0px;
 }
 .congregation h2{
@@ -515,6 +515,53 @@ background-blend-mode: multiply;
 
 
 /* ============ OUR SERVICES ============== */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #9f0102; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #9f0102;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* ============================================== */
 
 .text-hover-images {
     padding: 60px 0px;
@@ -611,6 +658,133 @@ background-blend-mode: multiply;
     /* background-color: rgba(0, 0, 0, 0.8); */
   }
   
+  /* ===================  donation ================= */
+
+  .demo {
+    padding: 30px 0
+}
+
+.pricingTable {
+    text-align: center
+}
+
+
+
+.demo {
+    background: #F4C430
+}
+
+h4 {
+    color: #9f0102
+}
+
+.pricingTable {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease 0s
+}
+
+.pricingTable:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8) inset, 0 0 10px rgba(0, 0, 0, .8)
+}
+
+.pricingTable svg {
+    display: block;
+    margin-left: -1px
+}
+
+.pricingTable .pricing-content {
+    padding: 50px 0 30px;
+    position: relative
+}
+
+.pricingTable .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #9f0102;
+    text-transform: uppercase;
+    margin: 0 0 10px
+}
+
+.pricingTable .pricing-content ul {
+    padding: 0;
+    margin: 0 0 30px;
+    list-style: none
+}
+
+.pricingTable .pricing-content ul li {
+    font-size: 18px;
+    color: rgba(0, 0, 0, .3);
+    line-height: 40px;
+    text-transform: capitalize
+}
+
+.pricingTable .pricingTable-signup {
+    display: inline-block;
+    padding: 8px 50px;
+    background: #9f0102;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .3s ease 0s
+}
+
+.pricingTable:hover .pricingTable-signup {
+    box-shadow: 0 0 10px #9f0102
+}
+
+.pricingTable .pricingTable-signup:hover {
+    color: #9f0102;
+    background: #fff;
+    box-shadow: 0 0 10px #9f0102, 0 0 10px #000 inset
+}
+
+.pricingTable.blue .title {
+    color: #F4C430
+}
+
+.pricingTable.blue .pricingTable-signup {
+    background: #F4C430
+}
+
+.pricingTable.blue:hover .pricingTable-signup {
+    box-shadow: 0 0 10px #F4C430
+}
+
+.pricingTable.blue .pricingTable-signup:hover {
+    color: #F4C430;
+    background: #fff;
+    box-shadow: 0 0 10px #F4C430, 0 0 10px #000 inset
+}
+
+.pricingTable.red .title {
+    color: #db2c29
+}
+
+.pricingTable.red .pricingTable-signup {
+    background: #db2c29
+}
+
+.pricingTable.red:hover .pricingTable-signup {
+    box-shadow: 0 0 10px #db2c29
+}
+
+.pricingTable.red .pricingTable-signup:hover {
+    color: #db2c29;
+    background: #fff;
+    box-shadow: 0 0 10px #db2c29, 0 0 10px #000 inset
+}
+
+@media only screen and (max-width:990px) {
+    .pricingTable {
+        margin-bottom: 30px
+    }
+}
   
   /* =========== faqs ================= */
   
@@ -728,6 +902,107 @@ background-blend-mode: multiply;
     }
   }
 
+
+  /* ================== blogs ===================== */
+  .team-grid {
+    color:#313437;
+    background-color:#fff;
+  }
+  
+  .team-grid p {
+    color:#7d8285;
+  }
+  
+  .team-grid h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .team-grid h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .team-grid .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
+  }
+  
+  .team-grid .intro p {
+    margin-bottom:0;
+  }
+  
+  .team-grid .people {
+    padding:50px 0;
+  }
+  
+  .team-grid .item {
+    margin-bottom:30px;
+  }
+  
+  .team-grid .item .box {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:280px;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .team-grid .item .cover {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgb(244, 196, 48,0.5);
+    transition:opacity 0.15s ease-in;
+    opacity:0;
+    padding-top:80px;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  }
+  
+  .team-grid .item:hover .cover {
+    opacity:1;
+  }
+  
+  .team-grid .item .name {
+    font-weight:bold;
+    margin-bottom:8px;
+  }
+  
+  .team-grid .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#bbd8fb;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:20px;
+  }
+  
+  .team-grid .social {
+    font-size:18px;
+  }
+  
+  .team-grid .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  }
+  
+  .team-grid .social a:hover {
+    opacity:1;
+  }
+  
 
   /* ============= form ============= */
 

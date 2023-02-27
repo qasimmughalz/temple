@@ -516,6 +516,14 @@ background-blend-mode: multiply;
 
 /* ============ OUR SERVICES ============== */
 
+.bg-image{
+  background-image: url(texted.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -671,7 +679,7 @@ background-blend-mode: multiply;
 
 
 .demo {
-    background: #F4C430
+    background-color: #F4C430
 }
 
 h4 {

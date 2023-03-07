@@ -12,7 +12,7 @@ body{
 }
 
 :root{
-    --blue:#F4C430;
+    --blue:#ff8900;
 }
 
 .text-success{
@@ -332,11 +332,6 @@ body {
   background-color: #9f0102;
 }
 
-h1 {
-  color: #cfcfcf;
-  font-family: "Molle", cursive;
-  font-size: 5em;
-}
 
 .btn-primary{
   background-color: #F4C430;
@@ -1054,6 +1049,8 @@ h4 {
   }
 
   
+
+  
   
   /* ============ footer================ */
   
@@ -1253,6 +1250,7 @@ h4 {
   footer#site-footer #footer-social-buttons img:hover {
     cursor: pointer;
   }
+
   
   
   @media screen and (max-width: 959px) {
@@ -1358,4 +1356,5 @@ h4 {
       margin-top: 1.32rem;
     }
   }
-  
+
+

@@ -19,6 +19,9 @@ body{
     color: #9f0102;
 }
 
+.text-yellow{
+  color: #ff8900;
+}
 
 nav{
     position: sticky;
@@ -26,6 +29,10 @@ nav{
 .header{
     position: relative;
     height: 90vh;
+}
+
+.dropdown-item{
+  font-size: 12px;
 }
 
 .relative{
